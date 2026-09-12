@@ -1,3 +1,5 @@
+Team: Sophie Ollas & Willem Grenman
+
 # Template App — Från commit till produktion
 
 Det här är startpunkten för ert projekt i DevOps-kursen. Appen är medvetet
