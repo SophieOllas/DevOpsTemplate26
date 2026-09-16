@@ -36,6 +36,14 @@ def health() -> dict[str, str]:
 def list_items() -> list[Item]:
     return _items
 
+# M2 - Uppdrag A
+@app.get("/api/items/{item_id}")
+def get_item(item_id: int) -> Item:
+    for item in _items:
+        if item.id == item_id:
+            return item
+    raise HTTPException(status_code=404, detail="Item not found")
+
 
 @app.post("/api/items", status_code=201)
 def create_item(payload: ItemCreate) -> Item:
