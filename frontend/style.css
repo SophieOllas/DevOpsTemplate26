@@ -1,4 +1,13 @@
+:root {
+  --bg: #f4f1ea; 
+  --fg: #222; 
+  --accent: #b3541e;
+  --border: 1px solid #ddd;
+}
+
 body {
+  background: var(--bg);
+  color: var(--fg);
   font-family: system-ui, sans-serif;
   max-width: 32rem;
   margin: 2rem auto;
@@ -17,6 +26,7 @@ input[type="text"] {
 }
 
 button {
+  background: var(--accent);
   padding: 0.5rem 1rem;
 }
 
@@ -30,5 +40,5 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: var(--border);
 }
